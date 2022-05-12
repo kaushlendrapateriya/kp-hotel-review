@@ -23,7 +23,7 @@ const Thumbnail = styledComponents.img`
 
 const HotelItem = ({ data }) => (
     <HotelItemWrapper>
-        <Thumbnail src={data.Thumbnail} width={200} />
+        <Thumbnail src={data.thumbnail} width={200} />
         <Title>{data.title}</Title>
     </HotelItemWrapper>
 );

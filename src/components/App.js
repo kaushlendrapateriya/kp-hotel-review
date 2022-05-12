@@ -25,6 +25,7 @@ const App = () => (
   <>
     <GlobalStyle />
     <AppWrapper>
+      <Header />
       <GlobalContext>
         <Routes>
           <Route path='/' element={<Hotels />} />

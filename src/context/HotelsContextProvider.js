@@ -63,7 +63,7 @@ const HotelsContextProvider = ({ children }) => {
             `https://my-json-server.typicode.com/kaushlendrapateriya/kp-hotel-review/hotels/${id}`,
         );
 
-        if (result.data && result.data.hasOwnPropery('id')) {
+        if (result.data && result.data.hasOwnProperty('id')) {
             dispatch({ type: 'GET_HOTEL_SUCCESS', payload: result.data });
         } else {
             dispatch({ type: 'GET_HOTEL_ERROR', payload: result.error });

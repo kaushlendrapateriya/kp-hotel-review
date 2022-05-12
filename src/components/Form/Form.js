@@ -69,6 +69,7 @@ const Form = () => {
                         value={description}
                         handleOnChange={setDescription}
                     />
+                    <SubmitButton>Add Review</SubmitButton>
                 </form>
             </FormWrapper>
         </>

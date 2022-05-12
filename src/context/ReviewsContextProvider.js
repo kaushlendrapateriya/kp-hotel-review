@@ -25,7 +25,7 @@ const reducer = (value, action) => {
                 error: action.payload,
             };
         case 'ADD_REVIEW_SUCCESS':
-            console.log(action)
+            //console.log(action);
             return {
                 ...value,
                 reviews: [...value.reviews, action.payload],
@@ -63,7 +63,7 @@ const ReviewsContextProvider = ({ children }) => {
             content,
         );
 
-        if (result.data && result.data.hasOwnPropery('id')) {
+        if (result.data && result.data.hasOwnProperty('id')) {
             dispatch({ type: 'ADD_REVIEW_SUCCESS', payload: content });
         } else {
             dispatch({ type: 'ADD_REVIEW_ERROR' });
